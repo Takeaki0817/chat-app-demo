@@ -8,11 +8,11 @@
     "start": "next start",
     "lint": "run-p lint:*",
     "lint:next": "next lint . --ignore-path .prettierignore --max-warnings 0",
-    "lint:prettier": "prettier --check .",
+    "lint:prettier": "prettier --write . --check",
     "lint:typecheck": "tsc --pretty --noEmit",
     "format": "run-s format:eslint format:prettier",
     "format:eslint": "npm run lint:next --fix",
-    "format:prettier": "npm run lint:prettier --write"
+    "format:prettier": "npm run lint:prettier"
   },
   "dependencies": {
     "@next/font": "13.1.6",
