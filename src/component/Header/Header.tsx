@@ -32,7 +32,7 @@ export const Header = () => {
         status: 'success',
         position: 'top',
       })
-     push((path) => path.signin.$url())
+      push((path) => path.signin.$url())
     } catch (e) {
       if (e instanceof FirebaseError) {
         console.log(e)
