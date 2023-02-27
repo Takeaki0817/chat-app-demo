@@ -83,7 +83,7 @@ export const Page = () => {
         <Center>
           <Button type={'submit'} isLoading={isLoading}>
             ログイン
-          </Button>{' '}
+          </Button>
         </Center>
       </chakra.form>
     </Container>
